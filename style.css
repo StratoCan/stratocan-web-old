@@ -1,0 +1,209 @@
+body{
+  margin:0;
+  background-color:  #28201c;
+  display: block;
+
+
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+.main{
+  height: 100vh;
+  background-image: url("background.jpg");
+  background-size: cover;
+
+}
+.nav{
+padding: 5px;
+background-color: white;
+filter: drop-shadow(0px -3px 15px black);
+display: block;
+width: 100vw;
+z-index: 1;
+}
+
+.nav ul{
+  text-align: center;
+  margin: 0;
+}
+.nav li{
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+}
+.nav li:hover{
+}
+.nav a{
+  font-size: 25px;
+  font-family: Roboto;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+.nav a:hover{
+  color: #63b9ff;
+}
+.none a{
+  padding-right: 10vw;
+}
+.none a:hover{
+  color: black;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translate(0%, 85%);
+  font-family: Roboto;
+  font-size: 25px;
+
+
+}
+.content img{
+  padding-right: 10px;
+
+}
+
+.content table a{
+  text-decoration: none;
+  color:black;
+
+}
+.content table a:hover{
+color: #63b9ff;
+}
+
+.content td{
+  margin: 5px;
+  padding: 5px;
+
+}
+.sec{
+  background-color: #28201d;
+  height: 100vh;
+
+
+}
+.missions{
+
+}
+.innermissions{
+  display: flex;
+}
+.align-center{
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-family: Bahnschrift;
+}
+.innermissions{
+ margin-left: 60px;
+ margin-right: 60px;
+
+}
+.innermissions article{
+  background-color: white;
+  border-radius: 5px;
+  width: 45vw;
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+
+}
+.image-fit{
+  margin: 0;
+}
+.image-fit img{
+overflow: hidden;
+background-position: center;
+width: 100%;
+background-size: cover;
+margin: 0;
+border-radius: 5px;
+
+}
+.primary, .secondary{
+
+}
+.primary h1, .secondary h1{
+  font-family: Bahnschrift;
+  font-size: 25px;
+  padding: -5px;
+
+}
+.primary p, .secondary p{
+  font-family: Tahoma;
+  text-align: justify;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.more-button{
+  margin-bottom: 5px;
+}
+.more-button a{
+  text-decoration: none;
+  font-family: Roboto;
+  background-color: #63b9ff ;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.more-button a:hover{
+  background-color: #215b8a;
+  transition-duration: 0.4s;
+
+}
+
+.team{
+  height: 100vh;
+  background-color: white;
+}
+
+.banner{
+  height: 25vh;
+  background-image: url("teambanner.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+.text h1{
+  font-family: Roboto;
+  color: white;
+  font-size: 100px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+
+
+}
+.text h2{
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 200;
+  color: white;
+  margin: 0;
+
+
+}
+.people{
+
+}
+.people li{
+  list-style-type: none;
+  display: inline;
+
+}
+
+
+
+
+
+
+
+
+
+/**/
