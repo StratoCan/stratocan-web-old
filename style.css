@@ -8,6 +8,13 @@ body {
 	display: block;
 }
 
+h2 {
+	color: white;
+	text-align: center;
+	margin: 20px 0;
+	font-size: 35px;
+}
+
 ::-webkit-scrollbar {
 	width: 0px;
 	background: transparent;
@@ -94,69 +101,46 @@ body {
 
 }
 
-.sec {
+.missions {
 	background-color: #28201d;
-	height: 100vh;
-
-
 }
 
-.missions {}
-
-.innermissions {
-	display: flex;
+.missions-container {
+	display: inline-flex;
+	justify-content: center;
+	margin: 0 60px;
 }
 
-.align-center {
-	text-align: center;
-	color: white;
-	font-size: 35px;
-	font-family: Bahnschrift;
-}
-
-.innermissions {
-	margin-left: 60px;
-	margin-right: 60px;
-
-}
-
-.innermissions article {
-	background-color: white;
-	border-radius: 5px;
-	width: 45vw;
-	height: auto;
-	margin: 5px;
-	padding: 5px;
-
-}
-
-.image-fit {
-	margin: 0;
-}
-
-.image-fit img {
+.mission-img img {
 	overflow: hidden;
 	background-position: center;
 	width: 100%;
 	background-size: cover;
 	margin: 0;
 	border-radius: 5px;
-
 }
 
-.primary,
-.secondary {}
+.mission {
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	width: 600px;
+	margin: 50px 20px;
+	padding: 10px;
+	border-radius: 20px;
+}
 
-.primary h1,
-.secondary h1 {
+.mission:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.mission h1 {
 	font-family: Bahnschrift;
 	font-size: 25px;
 	padding: -5px;
-
 }
 
-.primary p,
-.secondary p {
+.mission p {
 	font-family: Tahoma;
 	text-align: justify;
 	padding-bottom: 5px;
@@ -177,32 +161,27 @@ body {
 	transition-duration: 0.4s;
 }
 
-.team {
-	height: 100vh;
+.section-team {
+	height: 500px;
+	width: 100%;
 	background-color: white;
 }
 
-.banner {
-	height: 25vh;
-	background-image: url("teambanner.jpg");
-	background-position: center top;
-	background-size: cover;
+.team-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 20px;
+	margin: 50px 20% 50px 20%;
 }
 
-.text h1 {
-	font-family: Roboto;
-	color: white;
-	font-size: 100px;
-	font-weight: 600;
-	text-align: center;
-	margin: 0;
-	padding-top: 10px;
+.teammate {
+	background-color: whitesmoke;
+	border-radius: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.text h2 {
-	text-align: center;
-	font-family: Roboto;
-	font-weight: 200;
-	color: white;
-	margin: 0;
+.teammate:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
