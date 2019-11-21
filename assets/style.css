@@ -15,11 +15,6 @@ h2 {
 	font-size: 35px;
 }
 
-::-webkit-scrollbar {
-	width: 0px;
-	background: transparent;
-}
-
 .main {
 	height: 100vh;
 	background-image: url("img/background.jpg");
@@ -48,26 +43,26 @@ h2 {
 	padding: 15px;
 }
 
-.nav li:hover {}
-
 .nav a {
 	font-size: 25px;
 	font-family: Roboto;
 	text-decoration: none;
 	color: black;
 	padding: 5px;
+	transition: .5s ease-in-out;
 }
 
 .nav a:hover {
 	color: #63b9ff;
 }
 
-.none a {
+.nav > ul > li:nth-child(1) > a {
 	padding-right: 10vw;
+	color: black;
 }
 
-.none a:hover {
-	color: black;
+.nav > ul > li:nth-child(1) > a:hover {
+	color: #63b9ff;
 }
 
 .content {
@@ -77,8 +72,6 @@ h2 {
 	transform: translate(0%, 85%);
 	font-family: Roboto;
 	font-size: 25px;
-
-
 }
 
 .content img {
