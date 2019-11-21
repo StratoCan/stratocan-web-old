@@ -16,9 +16,9 @@
 	
 	<!-- IMPORTS -->
 	<link rel="stylesheet" href="assets/style.css" type="text/css">
+	<link rel="stylesheet" href="assets/jquery.pagepiling.css" type="text/css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js"></script>
+	<script src="assets/jquery.pagepiling.min.js" type="text/javascript"></script>
 	
 </head>
 
@@ -33,56 +33,113 @@
 		</ul>
 	</div>
 
-	<div id="fullpage">
+	<div id="wrapper">
 		<div class="section">
-			<table>
-				<tr>
-					<td><img src="img/logo.png" width="300px"></td>
-					<td class="spacer"> | </td>
-					<td><a href="https://www.spsoafm.cz/">SPSOAFM</a> based <a href="http://www.esa.int/Education/CanSat"> CanSat</a> team.</td>
+			<div class="main">
+				<table>
+					<tr>
+						<td>
+							<img src="img/logo.png" width="300px">
+						</td>
+						<td class="spacer"> | </td>
+						<td>
+							<a href="https://www.spsoafm.cz/">SPSOAFM</a> based <a href="http://www.esa.int/Education/CanSat"> CanSat</a> team.
+						</td>
 					</tr>
-			</table>
+				</table>
+			</div>
+			
 		</div>
-	</div>
-
-	<div class="content">
-		<table>
-			<tr>
-				<td><img src="img/logo.png" width="300px"></td>
-				<td class="spacer"> | </td>
-				<td><a href="https://www.spsoafm.cz/">SPSOAFM</a> based <a href="http://www.esa.int/Education/CanSat"> CanSat</a> team.</td>
-			</tr>
-		</table>
-	</div>
-
-	<div class="sec">
-		<div class="missions">
-			<h2>OUR MISSIONS</h2>
-			<div class="missions-container">
-				<div class="mission">
-					<div class="mission-img">
-						<img src="">
+		<div class="section">
+			<div class="missions">
+				<h2>OUR MISSIONS</h2>
+				<div class="missions-container">
+					<div class="mission">
+						<div class="mission-img">
+							<img src="">
+						</div>
+						<h1>Primary mission</h1>
+						<p>
+							Every team in CanSat competition has the same primary mission: basic weather conditions such as humidity, temperature and pressure. Then, those data are trasmitted to ground station, where are realtime displayed and stored. Let us show, how we do that.
+						</p>
+						<a href="#" class="more">MORE</a>
 					</div>
-					<h1>Primary mission</h1>
-					<p>
-						Every team in CanSat competition has the same primary mission: basic weather conditions such as
-						humidity, temperature and pressure. Then, those data are trasmitted to ground station, where are
-						realtime displayed and stored. Let us show, how we do that.
-					</p>
-					<a href="#" class="more">MORE</a>
+					<div class="mission">
+						<div class="image-fit">
+							<img src="">
+						</div>
+						<h1>Secondary mission</h1>
+						<p>
+							Besides primary mission, every team in CanSat competition has to their own secondary mission, which is mostly unique and the main part of the work time and the hardest part of the whole project. Jump right into development with us.
+						</p>
+						<a href="#" class="more">MORE</a>
+					</div>
 				</div>
-
-				<div class="mission">
-					<div class="image-fit">
-						<img src="">
+			</div>
+		</div>
+		<div class="section">
+			<div class="section-team">
+				<div class="team-container">
+					<div class="teammate">
+						<div class="team-img">
+							<img src="" alt="">
+						</div>
+						<div class="team-desc">
+							<p>
+								test testtest testtest testtest testtest testtest test
+							</p>
+						</div>
 					</div>
-					<h1>Secondary mission</h1>
-					<p>
-						Besides primary mission, every team in CanSat competition has to their own secondary mission,
-						which is mostly unique and the main part of the work time and the hardest part of the whole
-						project. Jump right into development with us.
-					</p>
-					<a href="#" class="more">MORE</a>
+					<div class="teammate">
+						<div class="team-img">
+							<img src="" alt="">
+						</div>
+						<div class="team-desc">
+							<p>
+								test testtest testtest testtest testtest testtest test
+							</p>
+						</div>
+					</div>
+					<div class="teammate">
+						<div class="team-img">
+							<img src="" alt="">
+						</div>
+						<div class="team-desc">
+							<p>
+								test testtest testtest testtest testtest testtest test
+							</p>
+						</div>
+					</div>
+					<div class="teammate">
+						<div class="team-img">
+							<img src="" alt="">
+						</div>
+						<div class="team-desc">
+							<p>
+								test testtest testtest testtest testtest testtest test
+							</p>
+						</div>
+					</div>
+					<div class="teammate">
+						<div class="team-img">
+							<img src="" alt="">
+						</div>
+						<div class="team-desc">
+							<p>
+								test testtest testtest testtest testtest testtest test
+							</p>
+						</div>
+					</div>
+					<div class="teammate">
+						<div class="team-img">
+							<img src="" alt="">
+						</div>
+						<div class="team-desc">
+							<p>
+								test testtest testtest testtest testtest testtest test
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -156,7 +213,7 @@
 	<script>
 		
 		$(document).ready(function() {
-			$('fullpage').fullpage();
+			$('#wrapper').pagepiling();
 		});
 
 	</script>
