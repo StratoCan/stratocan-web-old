@@ -25,12 +25,6 @@ h2 {
 	font-size: 35px;
 }
 
-.main {
-	height: 100vh;
-	background-image: url("img/background.jpg");
-	background-size: cover;
-}
-
 .nav {
 	padding: 5px;
 	background-color: white;
@@ -70,12 +64,16 @@ h2 {
 	height: 100%;
 	/*transform: translate(0%, 85%);*/
 	font-size: 25px;
-	background: url("../img/background.jpg") no-repeat;
+	background: url("../img/temporary/Banner-Background-Image.jpg") no-repeat;
 	background-size: cover;
 }
 
 .main img {
 	padding-right: 10px;
+}
+
+.main table {
+	z-index: 6;
 }
 
 .main td {
@@ -184,4 +182,42 @@ h2 {
 	border-radius: 100%;
 	display: block;
 	margin: 30px auto 0;
+}
+
+#front-cloud {
+	position: absolute;
+	bottom: -20px;
+	z-index: 5;
+	width: 85%;
+}
+
+#back-cloud {
+	position: absolute;
+	bottom: -20px;
+	left: 0px;
+}
+
+#can {
+	position: absolute;
+	right: 250px;
+	bottom: 30px;
+	height: 60%;
+}
+
+#cloud1 {
+	position: absolute;
+	left: 140px;
+	bottom: 315px;
+}
+
+#cloud2 {
+	position: absolute;
+	left: 420px;
+	bottom: 680px;
+}
+
+#cloud3 {
+	position: absolute;
+	right: 90px;
+    bottom: 570px;
 }

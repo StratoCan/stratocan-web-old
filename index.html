@@ -36,6 +36,12 @@
 	<div id="wrapper">
 		<div class="section">
 			<div class="main">
+				<img id="front-cloud" src="img/temporary/SEO-Front-Cloud-Pic-2-1.png" alt="">
+				<img id="back-cloud" src="img/temporary/sky-1.png" alt="">
+				<img id="can" src="img/temporary/SEO-Rocket-Pic.png" alt="">
+				<img id="cloud1" src="img/temporary/SEO-Small-Cloud-Pic-002.png" alt="">
+				<img id="cloud2" src="img/temporary/SEO-Small-Cloud-Pic-002.png" alt="">
+				<img id="cloud3" src="img/temporary/SEO-Small-Cloud-Pic-002.png" alt="">
 				<table>
 					<tr>
 						<td>
@@ -115,6 +121,27 @@
 		
 		$(document).ready(function() {
 			$('#wrapper').pagepiling();
+
+			var movementStrength = 25;
+			var height = movementStrength / $(window).height();
+			var width = movementStrength / $(window).width();
+
+			$(".main").mousemove(function(e){
+          		var pageX = e.pageX - ($(window).width() / 2);
+          		var pageY = e.pageY - ($(window).height() / 2);
+          		var newvalueX = width * pageX * -1 - 25;
+          		var newvalueY = height * pageY * -1 - 50;
+          		$('#back-cloud').css("bottom", newvalueY+"px");
+				$('#back-cloud').css("left", newvalueX+"px");
+				$('#can').css("bottom", newvalueY+"px");
+				$('#can').css("right", newvalueX+"px");
+				$('#cloud1').css("bottom", newvalueY+"px");
+				$('#cloud1').css("left", newvalueX+"px");
+				$('#cloud2').css("bottom", newvalueY+"px");
+				$('#cloud2').css("left", newvalueX+"px");
+				$('#cloud3').css("bottom", newvalueY+"px");
+				$('#cloud3').css("right", newvalueX+"px");
+			});
 		});
 
 	</script>
