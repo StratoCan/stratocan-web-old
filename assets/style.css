@@ -87,7 +87,7 @@ h2 {
 	width: 100%;
 	height: 100%;
 	background-color: #28201d;
-	padding-top: 150px;
+	padding-top: -30px;
 }
 
 .missions-container {
@@ -111,9 +111,21 @@ h2 {
 }
 
 .mission h1 {
-	font-family: Bahnschrift;
-	font-size: 25px;
+	font-family: 'Bungee', cursive;
+	font-size:45px;
 	padding: 0;
+	margin-top: -15px;
+	color:#278397;/*S tou barvou si nejsem jist...*/
+	margin-bottom: 0;
+	text-align: center;
+}
+.mission h2{
+	color: black;
+	text-align: center;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 0;
+	margin-top: -30px;
 }
 
 .mission p {
@@ -180,8 +192,12 @@ h2 {
 }
 
 .teammate img {
-	width: 100px;
-	border-radius: 100%;
+	
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-position: center;
 	display: block;
-	margin: 30px auto 0;
+	border: solid  #278397 5px;
+	margin: 10px auto 0;
 }
