@@ -87,7 +87,10 @@ h2 {
 	width: 100%;
 	height: 100%;
 	background-color: #28201d;
-	padding-top: -30px;
+}
+
+.missions h2 {
+	padding-top: 100px; /*not ideal*/
 }
 
 .missions-container {
@@ -192,10 +195,9 @@ h2 {
 }
 
 .teammate img {
-	
 	width: 200px;
 	height: 200px;
-	border-radius: 100px;
+	border-radius: 100%;
 	background-position: center;
 	display: block;
 	border: solid  #278397 5px;
