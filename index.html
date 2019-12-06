@@ -17,6 +17,7 @@
 	<!-- IMPORTS -->
 	<link rel="stylesheet" href="assets/style.css" type="text/css">
 	<link rel="stylesheet" href="assets/jquery.pagepiling.css" type="text/css"/>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="assets/jquery.pagepiling.min.js" type="text/javascript"></script>
 	
@@ -61,7 +62,7 @@
 				<h2>OUR MISSIONS</h2>
 				<div class="missions-container">
 					<div class="mission">
-						<img src="img/thumb-sek.png">
+						<img src="img/thumb-prim.png">
 						<h1>Primary mission</h1>
 						<p>
 							Every team in CanSat competition has the same primary mission: basic weather conditions such as humidity, temperature and pressure. Then, those data are trasmitted to ground station, where are realtime displayed and stored. Let us show, how we do that.
@@ -122,7 +123,7 @@
 		$(document).ready(function() {
 			$('#wrapper').pagepiling();
 
-			var movementStrength = 25;
+			/*var movementStrength = 25;
 			var height = movementStrength / $(window).height();
 			var width = movementStrength / $(window).width();
 
@@ -131,6 +132,8 @@
           		var pageY = e.pageY - ($(window).height() / 2);
           		var newvalueX = width * pageX * -1 - 25;
           		var newvalueY = height * pageY * -1 - 50;
+				var newrvalueX = $('#can').css("bottom");
+				var newrvalueY = $('#can').css("right");
           		$('#back-cloud').css("bottom", newvalueY+"px");
 				$('#back-cloud').css("left", newvalueX+"px");
 				$('#can').css("bottom", newvalueY+"px");
@@ -141,7 +144,22 @@
 				$('#cloud2').css("left", newvalueX+"px");
 				$('#cloud3').css("bottom", newvalueY+"px");
 				$('#cloud3').css("right", newvalueX+"px");
+			});*/
+
+			$(".main").mousemove(function(e){
+			var lFollowX = 0,
+    			lFollowY = 0,
+    			x = 0,
+    			y = 0,
+    			friction = 1 / 30;
+
+			x += (lFollowX - x) * friction;
+  			y += (lFollowY - y) * friction;
+
+			$('#can').css("bottom", y+"px");
+			$('#can').css("right", x+"px");
 			});
+			
 		});
 
 	</script>
