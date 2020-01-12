@@ -25,12 +25,6 @@ h2 {
 	font-size: 35px;
 }
 
-.main {
-	height: 100vh;
-	background-image: url("img/background.jpg");
-	background-size: cover;
-}
-
 .nav {
 	padding: 5px;
 	background-color: white;
@@ -70,7 +64,7 @@ h2 {
 	height: 100%;
 	/*transform: translate(0%, 85%);*/
 	font-size: 25px;
-	background: url("../img/background.jpg") no-repeat;
+	background: url("../img/bg.jpg") no-repeat;
 	background-size: cover;
 }
 
