@@ -311,6 +311,7 @@ h2 {
 		background-color: white;
 		width: 100%;
 		position: fixed;
+		z-index: 2;
 		top: 0;
 		margin: 0;
 		padding: 10px 10px;
@@ -325,6 +326,7 @@ h2 {
 	.menu-links {
 		display: block;
 		position: fixed;
+		z-index: 2;
 		top: 50px;
 		left: -150px;
 		width: 150px;
