@@ -189,7 +189,7 @@ h2 {
 
 .sponsors {
 	width: 100%;
-	height: 250px;
+	height: 175px;
 	background-color: whitesmoke;
 	padding-bottom: 30px;
 }
@@ -200,11 +200,7 @@ h2 {
 	margin: 0;
 }
 
-.sponsors img:nth-child(1) {
-	width: 150px;
-}
-
-.sponsors img:nth-child(2) {
+.sponsors img {
 	width: 100px;
 }
 
@@ -214,7 +210,6 @@ h2 {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 20px;
 }
 
 .social {
@@ -343,6 +338,7 @@ h2 {
 	.menu-links li {
 		width: 100%;
 		margin: 10px;
+		list-style: none;
 	}
 
 	/* MAIN LOGO */
