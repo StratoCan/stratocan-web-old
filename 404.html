@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>home | StratocanSolutions</title>
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+
+
+	<!-- Style/Scripts -->
+	<link rel="stylesheet" href="assets/style.css" type="text/css">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="assets/remix-icons/remixicon.css">
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+	// Add the new slick-theme.css if you want the default styling
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+</head>
+<body>
+    <div class="nav">
+		<ul>
+			<li class="none"><a href="index.html">StratocanSolutions</a></li>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="">SPONSORS</a></li>
+			<li><a href="">BLOGS</a></li>
+			<li><a href="">DONATE</a></li>
+		</ul>
+	</div>
+	<div class="nav-respo">
+		<span class="menu"><i class="ri-menu-line"></i></span>
+		<span><a href="index.html">StratocanSolutions</a></span>
+	</div>
+	<div class="menu-links">
+		<ul>
+			<li><a href="">SPONSORS</a></li>
+			<li><a href="">BLOGS</a></li>
+			<li><a href="">DONATE</a></li>
+		</ul>
+    </div>
+
+    <div class="e404">
+        <div>
+            <h2>404: oof page not found</h2>
+            <p>
+                Sorry the page you're looking for cannot be found.
+            </p>
+            <p>
+                <a href="index.html">Back to the main page</a>
+            </p>
+            <img src="img/404.png">
+        </div>
+    </div>
+    
+    <script>
+    
+    // RESPONZIVNÍ MENU
+	$('.menu').click(function() {
+		if($('.menu-links').css('left') == '-150px') {
+			$('.menu-links').animate({left: "0px"});
+		}
+		else {
+			$('.menu-links').animate({left: "-150px"});
+		}
+	});
+
+    </script>
+</body>
