@@ -74,6 +74,7 @@ header {
 
 .header-menu li {
 	display: inline;
+	list-style-type: none;
 }
 
 .header-menu a {
