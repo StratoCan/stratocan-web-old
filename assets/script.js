@@ -1,3 +1,4 @@
 $(document).ready(function() {
-	$('.load-wrap').delay(3500).fadeOut(500);
+	$('.load-wrap').hide();
+	//$('.load-wrap').delay(3500).fadeOut(500);
 });
