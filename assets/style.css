@@ -59,6 +59,61 @@ h3 {
 	margin-right: auto;
 }
 
+/* PRELOADER */
+
+@keyframes hovering {
+	0% {margin-top: 0px;}
+	50% {margin-top: 30px;}
+	100% {margin-top: 0px;}
+}
+
+@keyframes load {
+	from {width: 1%;}
+	to {width: 100%;}
+}
+
+.load-wrap {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: #FFF;
+	flex-direction: column;
+}
+
+.load-can {
+	height: 150px;
+}
+
+.load-can img {
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	animation-name: hovering;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.load-bar {
+	width: 100px;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 9999px;
+	padding: 3px;
+}
+
+.load-bar div {
+	border-radius: 9999px;
+	height: 10px;
+	background-color: var(--strato-blue);
+	animation-name: load;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in-out;
+}
+
 /* WELCOME */
 
 header {
@@ -103,8 +158,19 @@ header {
 
 /* TEAM */
 
+.team {
+	background-color: var(--strato-blue);
+}
+
 .team .row {
 	margin: 100px 0;
+}
+
+.kokot-wrap {
+	height: min-content;
+	width: min-content;
+	border-radius: 50%;
+	border: 5px solid #FFF;
 }
 
 .team img {
@@ -116,6 +182,7 @@ header {
 
 .team-text {
 	width: max-content;
+	color: #FFF;
 }
 
 .team li {
