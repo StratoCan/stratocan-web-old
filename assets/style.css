@@ -219,7 +219,7 @@ header {
 .sponswrap-flex{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;;
+	justify-content: center;
 }
 .card{ /*not sure 'bout that design yet*/
 	padding: 25px;
@@ -256,6 +256,11 @@ header {
 	height: 50px;
 	width: 50px;
 	transition-duration: 0.3s;
+}
+.sLinks a{
+	margin: 0;
+	padding: 0;
+	border: none; /*Tak co to jebe dopíči?*/
 }
 .sLinks img:hover{
 	transform: scale(1.1);
